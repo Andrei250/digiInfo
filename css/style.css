@@ -93,7 +93,7 @@ html {
   color: #7b7b7b; }
 
 .font-gray-9 {
-  color: #636363 #4d4d4d; }
+  color: #636363; }
 
 .font-gray-10 {
   color: #353535; }
@@ -209,7 +209,8 @@ html {
 
 body {
   line-height: 1.7;
-  color: #364d59 !important;
+  color: #030203 !important;
+  background-color: #030203 !important;
   font-weight: 300;
   font-size: 1rem; }
 
@@ -1330,7 +1331,7 @@ h1, h2, h3, h4, h5,
     color: #fd4d40; }
 
 .bg-light {
-  background-color: #f6f5f5 !important; }
+  background-color: #030203 !important; }
 
 .post-entry-1 .meta {
   color: #ccc; }
@@ -1802,13 +1803,13 @@ h1, h2, h3, h4, h5,
     color: rgba(255, 255, 255, 0.7); }
   .block-2.red,
   .block-2.red .wrap-icon {
-    background-color: #fd4d40; }
+    background-color: #030203; }
   .block-2.yellow,
   .block-2.yellow .wrap-icon {
-    background-color: #fdb62f; }
+    background-color: #030203; }
   .block-2.teal,
   .block-2.teal .wrap-icon {
-    background-color: #16c3b0; }
+    background-color: #030203; }
 
 .text-red {
   color: #fd4d40; }
