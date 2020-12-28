@@ -76,15 +76,16 @@
                         class="icon-menu h3 text-black"></span></a></span>
 
 
-                <nav class="site-navigation text-center mx-auto " role="navigation">
-                    <ul class="site-menu main-menu js-clone-nav  ">
-                        <li class="active"><a href="packages.html" class="nav-link"><p
-                                style=" color: red; font-size: 25px; margin-bottom: 0px !important">Home</p></a></li>
-                        <li><a href="pdfs.html" class="nav-link"><p
-                                style="color: black; font-size: 25px; margin-bottom: 0px !important">Learn</p></a></li>
+                <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
+                    <ul class="site-menu main-menu js-clone-nav mr-auto ">
+                        <li class="active"><a href="packages.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="packages.html" class="nav-link">Packages</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
-
             </div>
         </div>
 
@@ -114,155 +115,148 @@
             <form id="myForm" class="px-3 py-4 w-100">
 
                 <div class="form-group">
-                    <label class="my-2">
-                        Ce valoare are x?</label><br>
-
-                    <pre class="prettyprint">int x = 0;</pre>
+                    <label class="my-2">  Pentru codul urmator: </label><br>
+                    <pre class="prettyprint">int x = 1 + 2 / 3;<br>cout << x;</pre>
+                    <label class="my-2">  Ce se va fisa?</label><br>
                     <div class="checkbox">
 
                         <input class="my-2" type="checkbox" id="ans11" value="0">
-                        <label for="ans11">0</label><br>
+                        <label for="ans11">1</label><br>
                         <input class="my-2" type="checkbox" id="ans12" value="1">
-                        <label for="ans12">1</label><br>
+                        <label for="ans12">2</label><br>
                         <input class="my-2" type="checkbox" id="ans13" value="2">
-                        <label for="ans13">2</label><br>
+                        <label for="ans13">3</label><br>
                         <input class="my-2" type="checkbox" id="ans14" value="3">
-                        <label for="ans14">3</label><br>
+                        <label for="ans14">4</label><br>
                     </div>
-                    <div class="alert alert-danger" id="ansWrong1" style="display: none">Raspunsul este gresit. X
-                        are
-                        valoarea 0
+                    <div class="alert alert-danger" id="ansWrong1" style="display: none">Raspunsul este gresit. Raspunsul este 1.
                     </div>
                     <div class="alert alert-success" id="ansGood1" style="display: none">Raspunsul este corect.
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label class="my-2">
-                        Ce valoare are x?</label><br>
-
-                    <pre class="prettyprint">int x = 0; <br> x = 1;</pre>
+                    <label class="my-2">  Pentru codul urmator: </label><br>
+                    <pre class="prettyprint">int x =  10 - 3 * 6 / 9;<br>cout << x;</pre>
+                    <label class="my-2">   Ce se va afisa?</label><br>
                     <div class="checkbox">
                         <input class="my-2" type="checkbox" id="ans21" value="0">
-                        <label for="ans21">0</label><br>
+                        <label for="ans21">7</label><br>
                         <input class="my-2" type="checkbox" id="ans22" value="1">
-                        <label for="ans22">1</label><br>
+                        <label for="ans22">8</label><br>
                         <input class="my-2" type="checkbox" id="ans23" value="2">
-                        <label for="ans23">2</label><br>
+                        <label for="ans23">6</label><br>
                         <input class="my-2" type="checkbox" id="ans24" value="3">
-                        <label for="ans24">3</label><br>
+                        <label for="ans24">5</label><br>
                     </div>
                     <div class="alert alert-danger" id="ansWrong2" style="display:none;">Raspunsul este gresit.
-                        Raspunsul este 1
+                        Raspunsul este 8.
                     </div>
                     <div class="alert alert-success" id="ansGood2" style="display: none">Raspunsul este corect.
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label class="my-2">Ce rezultat se va afla in b?
-                    </label><br>
-                    <pre class="prettyprint">int a = 1, b = 3;<br>a = a + b;</pre>
+
+                    <label class="my-2">  Pentru codul urmator: </label><br>
+                    <pre class="prettyprint">for(int i = 5; < 11; i++)<br>cout << i << " ";</pre>
+                    <label class="my-2">Care se va afisa?</label><br>
                     <div class="checkbox">
                         <input class="my-2" type="checkbox" id="ans31" value="0">
-                        <label for="ans31">3</label><br>
+                        <label for="ans31">5 6 7 8 9 10</label><br>
                         <input class="my-2" type="checkbox" id="ans32" value="1">
-                        <label for="ans32">1</label><br>
+                        <label for="ans32">1 2 3 4 5 6 7 8 9 10</label><br>
                         <input class="my-2" type="checkbox" id="ans33" value="2">
-                        <label for="ans33">4</label><br>
+                        <label for="ans33">9 10</label><br>
                         <input class="my-2" type="checkbox" id="ans34" value="3">
                         <label for="ans34">10</label><br>
                     </div>
-                    <div class="alert alert-danger" id="ansWrong3" style="display:none;">Raspunsul este gresit. b
-                        este
-                        3
+                    <div class="alert alert-danger" id="ansWrong3" style="display:none;">Raspunsul este gresit. Raspunsul este 5 6 7 8 9 10
                     </div>
                     <div class="alert alert-success" id="ansGood3" style="display:none;">Raspunsul este corect.
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label class="my-2">
-                        ce valoare are x?</label><br>
-
-                    <pre class="prettyprint">int x = 1250; <br>x = x / 3;</pre>
+                    <label class="my-2">  Pentru codul urmator: </label><br>
+                    <pre class="prettyprint">int n = 3;<br>int i = 1;<br>while(i <= n) {<br>   cout << i;<br>   cout<<"x";<br>}</pre>
+                    <label class="my-2">Ce se va afisa?</label><br>
                     <div class="checkbox">
+
                         <input class="my-2" type="checkbox" id="ans41" value="0">
-                        <label for="ans41">0.3</label><br>
+                        <label for="ans41">1x2x3x</label><br>
                         <input class="my-2" type="checkbox" id="ans42" value="1">
-                        <label for="ans42">416.66666</label><br>
+                        <label for="ans42">1x2x</label><br>
                         <input class="my-2" type="checkbox" id="ans43" value="2">
-                        <label for="ans43">416</label><br>
+                        <label for="ans43">Ruleaza la infinit</label><br>
                         <input class="my-2" type="checkbox" id="ans44" value="3">
-                        <label for="ans44">416.6</label><br>
+                        <label for="ans44">xx</label><br>
                     </div>
                     <div class="alert alert-danger" id="ansWrong4" style="display: none">Raspunsul este gresit.
-                        Raspunsul este 416
+                        Raspunsul este  ca o sa ruleze la infinit.
                     </div>
                     <div class="alert alert-success" id="ansGood4" style="display: none">Raspunsul este corect.
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label class="my-2">
-                        Ce se va intampla?</label><br>
-                    <pre class="prettyprint">int x = 10 % 0; </pre>
+                    <label class="my-2">  Pentru codul urmator: </label><br>
+                    <pre class="prettyprint">int x, y;<br>x = y = 10;<br>x = 5;</pre>
+                    <label class="my-2">Ce sunt valorile lui x si y?</label><br>
                     <div class="checkbox">
                         <input class="my-2" type="checkbox" id="ans51" value="0">
-                        <label for="ans51">Va rula</label><br>
+                        <label for="ans51">10 si 10</label><br>
                         <input class="my-2" type="checkbox" id="ans52" value="1">
-                        <label for="ans52">Nimic</label><br>
+                        <label for="ans52">10 si 5</label><br>
                         <input class="my-2" type="checkbox" id="ans53" value="2">
-                        <label for="ans53">Warning</label><br>
+                        <label for="ans53">5 si 5</label><br>
                         <input class="my-2" type="checkbox" id="ans54" value="3">
-                        <label for="ans54">Eroare</label><br>
+                        <label for="ans54">5 si 10</label><br>
                     </div>
                     <div class="alert alert-danger" id="ansWrong5" style="display: none">Raspunsul este gresit.
-                        Codul va
-                        da eroare.
+                        Raspunsul este 5 si 10.
                     </div>
                     <div class="alert alert-success" id="ansGood5" style="display: none">Raspunsul este corect.
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label class="my-2">
-                        Ce se va intampla?</label><br>
-                    <pre class="prettyprint">int x = 10 % 1; </pre>
+                    <label class="my-2">  Pentru codul urmator: </label><br>
+                    <pre class="prettyprint">for(int i = 1; i < 100; i++)<br>cout << i << " ";</pre>
+                    <label class="my-2">Ce se va afisa?</label><br>
                     <div class="checkbox">
                         <input class="my-2" type="checkbox" id="ans61" value="0">
-                        <label for="ans61">Va rula</label><br>
+                        <label for="ans61">Numerele de la 1 la 99 inclusiv</label><br>
                         <input class="my-2" type="checkbox" id="ans62" value="1">
-                        <label for="ans62">Nimic</label><br>
+                        <label for="ans62">Numerele de la 1 la 100 inclusiv</label><br>
                         <input class="my-2" type="checkbox" id="ans63" value="2">
-                        <label for="ans63">Warning</label><br>
+                        <label for="ans63">Numerele de la 2 la 100 inclusiv</label><br>
                         <input class="my-2" type="checkbox" id="ans64" value="3">
-                        <label for="ans64">Eroare</label><br>
+                        <label for="ans64">Numerele de la 1 la 99 din 2 in 2</label><br>
                     </div>
                     <div class="alert alert-danger" id="ansWrong6" style="display: none">Raspunsul este gresit.
-                        Codul va
-                        rula.
+                        Raspunsul este Numerele de la 1 la 99 inclusiv.
                     </div>
                     <div class="alert alert-success" id="ansGood6" style="display: none">Raspunsul este corect.
                     </div>
                 </div>
                 <hr>
                 <div class="form-group w-100">
-                    <label class="my-2"> Care este rezultatul?</label><br>
-                    <pre class="prettyprint">int x = 10 / 3 + 1;</pre>
+                    <label class="my-2"> Pentru codul urmator, ce se afla in x?</label><br>
+                    <pre class="prettyprint">int n = 50;<br>for(int i = 1; i < n - 3; i++)<br>cout << i << " ";</pre>
                     <div class="checkbox">
 
                         <input class="my-2" type="checkbox" id="ans71" value="0">
-                        <label for="ans71">1</label><br>
+                        <label for="ans71">Numerele de la 1 la 49</label><br>
                         <input class="my-2" type="checkbox" id="ans72" value="1">
-                        <label for="ans72">4</label><br>
+                        <label for="ans72">Numerele de la 1 la 46 inclusiv</label><br>
                         <input class="my-2" type="checkbox" id="ans73" value="2">
-                        <label for="ans73">4.33</label><br>
+                        <label for="ans73">Numerele de la 1 la 47 inclusiv</label><br>
                         <input class="my-2" type="checkbox" id="ans74" value="3">
-                        <label for="ans74">5.33</label><br>
+                        <label for="ans74">Numerele de la 2 la 10. </label><br>
                     </div>
                     <div class="alert alert-danger" id="ansWrong7" style="display: none">Raspunsul este gresit.
-                        Raspunsul este 4.
+                        Raspunsul este Numerele de la 1 la 46 inclusiv.
                     </div>
                     <div class="alert alert-success" id="ansGood7" style="display: none">Raspunsul este corect.
                     </div>
