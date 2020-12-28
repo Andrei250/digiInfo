@@ -18,19 +18,37 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst"></script>
 
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        input, label, p, h1, h2 {
+            color: white;
+        }
+
+        label, input, .checkbox {
+            font-size: 24px;
+            padding-left: 20px;
+        }
+
+    </style>
 
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #030203">
 
 
 <div class="site-wrap" id="home-section">
@@ -45,13 +63,13 @@
     </div>
 
 
-
     <header class="site-navbar site-navbar-target" role="banner">
 
         <div class="container">
             <div class="menu-wrap d-flex align-items-center">
-                <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
-
+                <span class="d-inline-block d-lg-none"><a href="#"
+                                                          class="text-black site-menu-toggle js-menu-toggle py-5"><span
+                        class="icon-menu h3 text-black"></span></a></span>
 
 
                 <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
@@ -68,12 +86,12 @@
         </div>
 
 
-
     </header>
 
     <div class="ftco-blocks-cover-1">
         <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
-        <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')">
+        <div class="site-section-cover overlay" data-stellar-background-ratio="0.5"
+             style="background-image: url('images/hero_1.jpg')">
             <div class="container">
                 <div class="row align-items-center ">
 
@@ -88,81 +106,108 @@
         </div>
     </div>
 
-    <div class="col col-lg-10 mx-auto my-3" style="background-color: lightgrey; border-radius:30px;">
+    <div class="col col-lg-8 mx-auto my-3" style="background-color: #282C2D; border-radius:30px;">
         <div class="container mx-3">
             <form id="myForm" class="px-3">
                 <div class="form-group">
-                    <label class="my-2">Pentru codul urmator<br> <pre class="prettyprint">int x = 0;</pre> ce valoare are x?</label><br>
-                    <input class="my-2" type="checkbox" id="ans11" value="0">
-                    <label for="ans11">0</label><br>
-                    <input class="my-2" type="checkbox" id="ans12" value="1">
-                    <label for="ans12">1</label><br>
-                    <input class="my-2" type="checkbox" id="ans13" value="2">
-                    <label for="ans13">2</label><br>
-                    <input class="my-2" type="checkbox" id="ans14" value="3">
-                    <label for="ans14">3</label><br>
+                    <label class="my-2">Pentru codul urmator<br>
+                        <pre class="prettyprint">int x = 0;</pre>
+                        ce valoare are x?</label><br>
+                    <div class="checkbox">
+                        <input class="my-2" type="checkbox" id="ans11" value="0">
+                        <label for="ans11">0</label><br>
+                        <input class="my-2" type="checkbox" id="ans12" value="1">
+                        <label for="ans12">1</label><br>
+                        <input class="my-2" type="checkbox" id="ans13" value="2">
+                        <label for="ans13">2</label><br>
+                        <input class="my-2" type="checkbox" id="ans14" value="3">
+                        <label for="ans14">3</label><br>
+                    </div>
 
-                    <div class="alert alert-danger" id="ansWrong1" style="display: none">Raspunsul este gresit. X are valoarea 0</div>
+                    <div class="alert alert-danger" id="ansWrong1" style="display: none">Raspunsul este gresit. X are
+                        valoarea 0
+                    </div>
                     <div class="alert alert-success" id="ansGood1" style="display: none">Raspunsul este corect.</div>
                 </div>
-
+                <hr>
                 <div class="form-group">
-                    <label class="my-2">Pentru codul urmator<br> <pre class="prettyprint">int x = 0;</pre> ce valoare are x?</label><br>
-                    <input class="my-2" type="checkbox" id="ans21" value="0">
-                    <label for="ans21">0</label><br>
-                    <input class="my-2" type="checkbox" id="ans22" value="1">
-                    <label for="ans22">1</label><br>
-                    <input class="my-2" type="checkbox" id="ans23" value="2">
-                    <label for="ans23">2</label><br>
-                    <input class="my-2" type="checkbox" id="ans24" value="3">
-                    <label for="ans24">3</label><br>
+                    <label class="my-2">Pentru codul urmator<br>
+                        <pre class="prettyprint">int x = 0;</pre>
+                        ce valoare are x?</label><br>
+                    <div class="checkbox">
 
-                    <div class="alert alert-danger" id="ansWrong2" style="display:none;">Raspunsul este gresit. X are valoarea 0</div>
+                        <input class="my-2" type="checkbox" id="ans21" value="0">
+                        <label for="ans21">0</label><br>
+                        <input class="my-2" type="checkbox" id="ans22" value="1">
+                        <label for="ans22">1</label><br>
+                        <input class="my-2" type="checkbox" id="ans23" value="2">
+                        <label for="ans23">2</label><br>
+                        <input class="my-2" type="checkbox" id="ans24" value="3">
+                        <label for="ans24">3</label><br>
+                    </div>
+                    <div class="alert alert-danger" id="ansWrong2" style="display:none;">Raspunsul este gresit. X are
+                        valoarea 0
+                    </div>
                     <div class="alert alert-success" id="ansGood2" style="display: none">Raspunsul este corect.</div>
                 </div>
-
+                <hr>
                 <div class="form-group">
-                    <label class="my-2">Pentru codul urmator<br> <pre class="prettyprint">int x = 0;</pre> ce valoare are x?</label><br>
-                    <input class="my-2" type="checkbox" id="ans31" value="0">
-                    <label for="ans31">0</label><br>
-                    <input class="my-2" type="checkbox" id="ans32" value="1">
-                    <label for="ans32">1</label><br>
-                    <input class="my-2" type="checkbox" id="ans33" value="2">
-                    <label for="ans33">2</label><br>
-                    <input class="my-2" type="checkbox" id="ans34" value="3">
-                    <label for="ans34">3</label><br>
-
-                    <div class="alert alert-danger" id="ansWrong3" style="display:none;">Raspunsul este gresit. X are valoarea 0</div>
+                    <label class="my-2">Pentru codul urmator<br>
+                        <pre class="prettyprint">int x = 0;</pre>
+                        ce valoare are x?</label><br>
+                    <div class="checkbox">
+                        <input class="my-2" type="checkbox" id="ans31" value="0">
+                        <label for="ans31">0</label><br>
+                        <input class="my-2" type="checkbox" id="ans32" value="1">
+                        <label for="ans32">1</label><br>
+                        <input class="my-2" type="checkbox" id="ans33" value="2">
+                        <label for="ans33">2</label><br>
+                        <input class="my-2" type="checkbox" id="ans34" value="3">
+                        <label for="ans34">3</label><br>
+                    </div>
+                    <div class="alert alert-danger" id="ansWrong3" style="display:none;">Raspunsul este gresit. X are
+                        valoarea 0
+                    </div>
                     <div class="alert alert-success" id="ansGood3" style="display:none;">Raspunsul este corect.</div>
                 </div>
-
+                <hr>
                 <div class="form-group">
-                    <label class="my-2">Pentru codul urmator<br> <pre class="prettyprint">int x = 0;</pre> ce valoare are x?</label><br>
-                    <input class="my-2" type="checkbox" id="ans41" value="0">
-                    <label for="ans41">0</label><br>
-                    <input class="my-2" type="checkbox" id="ans42" value="1">
-                    <label for="ans42">1</label><br>
-                    <input class="my-2" type="checkbox" id="ans43" value="2">
-                    <label for="ans43">2</label><br>
-                    <input class="my-2" type="checkbox" id="ans44" value="3">
-                    <label for="ans44">3</label><br>
-
-                    <div class="alert alert-danger" id="ansWrong4" style="display: none">Raspunsul este gresit. X are valoarea 0</div>
+                    <label class="my-2">Pentru codul urmator<br>
+                        <pre class="prettyprint">int x = 0;</pre>
+                        ce valoare are x?</label><br>
+                    <div class="checkbox">
+                        <input class="my-2" type="checkbox" id="ans41" value="0">
+                        <label for="ans41">0</label><br>
+                        <input class="my-2" type="checkbox" id="ans42" value="1">
+                        <label for="ans42">1</label><br>
+                        <input class="my-2" type="checkbox" id="ans43" value="2">
+                        <label for="ans43">2</label><br>
+                        <input class="my-2" type="checkbox" id="ans44" value="3">
+                        <label for="ans44">3</label><br>
+                    </div>
+                    <div class="alert alert-danger" id="ansWrong4" style="display: none">Raspunsul este gresit. X are
+                        valoarea 0
+                    </div>
                     <div class="alert alert-success" id="ansGood4" style="display: none">Raspunsul este corect.</div>
                 </div>
-
+                <hr>
                 <div class="form-group">
-                    <label class="my-2" >Pentru codul urmator<br> <pre class="prettyprint">int x = 0;</pre> ce valoare are x?</label><br>
-                    <input class="my-2" type="checkbox" id="ans51" value="0">
-                    <label for="ans51">0</label><br>
-                    <input class="my-2" type="checkbox" id="ans52" value="1">
-                    <label for="ans52">2</label><br>
-                    <input class="my-2" type="checkbox" id="ans53" value="2">
-                    <label for="ans53">3</label><br>
-                    <input class="my-2" type="checkbox" id="ans54" value="3">
-                    <label for="ans54">4</label><br>
-
-                    <div class="alert alert-danger" id="ansWrong5" style="display: none">Raspunsul este gresit. X are valoarea 0</div>
+                    <label class="my-2">Pentru codul urmator<br>
+                        <pre class="prettyprint">int x = 0;</pre>
+                        ce valoare are x?</label><br>
+                    <div class="checkbox">
+                        <input class="my-2" type="checkbox" id="ans51" value="0">
+                        <label for="ans51">0</label><br>
+                        <input class="my-2" type="checkbox" id="ans52" value="1">
+                        <label for="ans52">2</label><br>
+                        <input class="my-2" type="checkbox" id="ans53" value="2">
+                        <label for="ans53">3</label><br>
+                        <input class="my-2" type="checkbox" id="ans54" value="3">
+                        <label for="ans54">4</label><br>
+                    </div>
+                    <div class="alert alert-danger" id="ansWrong5" style="display: none">Raspunsul este gresit. X are
+                        valoarea 0
+                    </div>
                     <div class="alert alert-success" id="ansGood5" style="display: none">Raspunsul este corect.</div>
                 </div>
 
