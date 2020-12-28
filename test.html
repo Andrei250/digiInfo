@@ -95,13 +95,24 @@
 <script>
     var ans = [1, 2, 1, 3, 4];
 
+
     $(document).ready(function () {
        $("#myForm").on("submit", function (e) {
            e.preventDefault();
            $("#submit-btn").remove();
 
           for (var i = 0; i < 5; ++i) {
-              if ($("#ans" + (i + 1) + ans[i])[0].checked) {
+              let check = true;
+
+              for (var j = 1; j < 5; ++j) {
+                  if ($("#ans" + (i + 1) + j)[0].checked && j !== ans[i]) {
+                      check = false;
+                  } else if (! ($("#ans" + (i + 1) + j)[0].checked) && j === ans[i]) {
+                      check = false;
+                  }
+              }
+
+              if (check) {
                   $("#ansGood" + (i + 1)).css("display", "block");
               } else {
                   $("#ansWrong" + (i + 1)).css("display", "block");
