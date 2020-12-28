@@ -1,0 +1,95 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst"></script>
+</head>
+
+<body>
+    <div class="container mx-3">
+        <form id="myForm" class="px-3">
+            <div class="form-group">
+                <label class="my-2">Pentru codul urmator<br> <span class="prettyprint">int x = 0;</span> <br> ce valoare are x?</label><br>
+                <input class="my-2" type="radio" id="ans11" value="0"><br>
+                <input class="my-2" type="radio" id="ans12" value="1"><br>
+                <input class="my-2" type="radio" id="ans13" value="2"><br>
+                <input class="my-2" type="radio" id="ans14" value="3"><br>
+
+                <div class="alert alert-danger" id="ansWrong1" style="display: none">Raspunsul este gresit. X are valoarea 0</div>
+                <div class="alert alert-success" id="ansGood1" style="display: none">Raspunsul este corect.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="my-2">Pentru codul urmator<br> <span class="prettyprint">int x = 0;</span> <br> ce valoare are x?</label><br>
+                <input class="my-2" type="radio" id="ans21" value="0"><br>
+                <input class="my-2" type="radio" id="ans22" value="1"><br>
+                <input class="my-2" type="radio" id="ans23" value="2"><br>
+                <input class="my-2" type="radio" id="ans24" value="3"><br>
+
+                <div class="alert alert-danger" id="ansWrong2" style="display:none;">Raspunsul este gresit. X are valoarea 0</div>
+                <div class="alert alert-success" id="ansGood2" style="display: none">Raspunsul este corect.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="my-2">Pentru codul urmator<br> <span class="prettyprint">int x = 0;</span> <br> ce valoare are x?</label><br>
+                <input class="my-2" type="radio" id="ans31" value="0"><br>
+                <input class="my-2" type="radio" id="ans32" value="1"><br>
+                <input class="my-2" type="radio" id="ans33" value="2"><br>
+                <input class="my-2" type="radio" id="ans34" value="3"><br>
+
+                <div class="alert alert-danger" id="ansWrong3" style="display:none;">Raspunsul este gresit. X are valoarea 0</div>
+                <div class="alert alert-success" id="ansGood3" style="display:none;">Raspunsul este corect.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="my-2">Pentru codul urmator<br> <span class="prettyprint">int x = 0;</span> <br> ce valoare are x?</label><br>
+                <input class="my-2" type="radio" id="ans41" value="0"><br>
+                <input class="my-2" type="radio" id="ans42" value="1"><br>
+                <input class="my-2" type="radio" id="ans43" value="2"><br>
+                <input class="my-2" type="radio" id="ans44" value="3"><br>
+
+                <div class="alert alert-danger" id="ansWrong4" style="display: none">Raspunsul este gresit. X are valoarea 0</div>
+                <div class="alert alert-success" id="ansGood4" style="display: none">Raspunsul este corect.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="my-2" >Pentru codul urmator<br> <span class="prettyprint">int x = 0;</span> <br> ce valoare are x?</label><br>
+                <input class="my-2" type="radio" id="ans51" value="0"> <br>
+                <input class="my-2" type="radio" id="ans52" value="1"><br>
+                <input class="my-2" type="radio" id="ans53" value="2"><br>
+                <input class="my-2" type="radio" id="ans54" value="3"><br>
+
+                <div class="alert alert-danger" id="ansWrong5" style="display: none">Raspunsul este gresit. X are valoarea 0</div>
+                <div class="alert alert-success" id="ansGood5" style="display: none">Raspunsul este corect.</div>
+            </div>
+
+            <input type="submit" value="Rezolva" class="btn btn-success" id="submit-btn">
+
+        </form>
+    </div>
+
+</body>
+
+<script>
+    var ans = [1, 2, 1, 3, 4];
+
+    $(document).ready(function () {
+       $("#myForm").on("submit", function (e) {
+           e.preventDefault();
+           $("#submit-btn").remove();
+
+          for (var i = 0; i < 5; ++i) {
+              if ($("#ans" + (i + 1) + ans[i])[0].checked) {
+                  $("#ansGood" + (i + 1)).css("display", "block");
+              } else {
+                  $("#ansWrong" + (i + 1)).css("display", "block");
+              }
+          }
+       });
+    });
+
+</script>
+
+</html>
