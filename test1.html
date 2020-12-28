@@ -108,110 +108,114 @@
 
     <div class="col col-lg-8 mx-auto my-3" style="background-color: #282C2D; border-radius:30px;">
         <div class="container mx-3">
-            <form id="myForm" class="px-3">
+            <form id="myForm" class="px-3 py-4 w-100">
                 <div class="form-group">
-                    <label class="my-2">Pentru codul urmator<br>
-                        <pre class="prettyprint">int x = 0;</pre>
-                        ce valoare are x?</label><br>
-                    <div class="checkbox">
-                        <input class="my-2" type="checkbox" id="ans11" value="0">
-                        <label for="ans11">0</label><br>
-                        <input class="my-2" type="checkbox" id="ans12" value="1">
-                        <label for="ans12">1</label><br>
-                        <input class="my-2" type="checkbox" id="ans13" value="2">
-                        <label for="ans13">2</label><br>
-                        <input class="my-2" type="checkbox" id="ans14" value="3">
-                        <label for="ans14">3</label><br>
-                    </div>
+                    <label class="my-2">Pentru codul urmator:<br> <pre class="prettyprint">int x = 0;</pre> ce valoare are x?</label><br>
+                    <input class="my-2" type="checkbox" id="ans11" value="0">
+                    <label for="ans11">0</label><br>
+                    <input class="my-2" type="checkbox" id="ans12" value="1">
+                    <label for="ans12">1</label><br>
+                    <input class="my-2" type="checkbox" id="ans13" value="2">
+                    <label for="ans13">2</label><br>
+                    <input class="my-2" type="checkbox" id="ans14" value="3">
+                    <label for="ans14">3</label><br>
 
-                    <div class="alert alert-danger" id="ansWrong1" style="display: none">Raspunsul este gresit. X are
-                        valoarea 0
-                    </div>
+                    <div class="alert alert-danger" id="ansWrong1" style="display: none">Raspunsul este gresit. X are valoarea 0</div>
                     <div class="alert alert-success" id="ansGood1" style="display: none">Raspunsul este corect.</div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label class="my-2">Pentru codul urmator<br>
-                        <pre class="prettyprint">int x = 0;</pre>
-                        ce valoare are x?</label><br>
-                    <div class="checkbox">
+                    <label class="my-2">Pentru codul urmator: <br> <pre class="prettyprint">int x = 0; <br> x = 1;</pre> ce valoare are x?</label><br>
+                    <input class="my-2" type="checkbox" id="ans21" value="0">
+                    <label for="ans21">0</label><br>
+                    <input class="my-2" type="checkbox" id="ans22" value="1">
+                    <label for="ans22">1</label><br>
+                    <input class="my-2" type="checkbox" id="ans23" value="2">
+                    <label for="ans23">2</label><br>
+                    <input class="my-2" type="checkbox" id="ans24" value="3">
+                    <label for="ans24">3</label><br>
 
-                        <input class="my-2" type="checkbox" id="ans21" value="0">
-                        <label for="ans21">0</label><br>
-                        <input class="my-2" type="checkbox" id="ans22" value="1">
-                        <label for="ans22">1</label><br>
-                        <input class="my-2" type="checkbox" id="ans23" value="2">
-                        <label for="ans23">2</label><br>
-                        <input class="my-2" type="checkbox" id="ans24" value="3">
-                        <label for="ans24">3</label><br>
-                    </div>
-                    <div class="alert alert-danger" id="ansWrong2" style="display:none;">Raspunsul este gresit. X are
-                        valoarea 0
-                    </div>
+                    <div class="alert alert-danger" id="ansWrong2" style="display:none;">Raspunsul este gresit. Raspunsul este 1</div>
                     <div class="alert alert-success" id="ansGood2" style="display: none">Raspunsul este corect.</div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label class="my-2">Pentru codul urmator<br>
-                        <pre class="prettyprint">int x = 0;</pre>
-                        ce valoare are x?</label><br>
-                    <div class="checkbox">
-                        <input class="my-2" type="checkbox" id="ans31" value="0">
-                        <label for="ans31">0</label><br>
-                        <input class="my-2" type="checkbox" id="ans32" value="1">
-                        <label for="ans32">1</label><br>
-                        <input class="my-2" type="checkbox" id="ans33" value="2">
-                        <label for="ans33">2</label><br>
-                        <input class="my-2" type="checkbox" id="ans34" value="3">
-                        <label for="ans34">3</label><br>
-                    </div>
-                    <div class="alert alert-danger" id="ansWrong3" style="display:none;">Raspunsul este gresit. X are
-                        valoarea 0
-                    </div>
+                    <label class="my-2">Ce rezultat se va afla in b?<br> <pre class="prettyprint">int a = 1, b = 3;<br>a = a + b;</pre></label><br>
+                    <input class="my-2" type="checkbox" id="ans31" value="0">
+                    <label for="ans31">3</label><br>
+                    <input class="my-2" type="checkbox" id="ans32" value="1">
+                    <label for="ans32">1</label><br>
+                    <input class="my-2" type="checkbox" id="ans33" value="2">
+                    <label for="ans33">4</label><br>
+                    <input class="my-2" type="checkbox" id="ans34" value="3">
+                    <label for="ans34">10</label><br>
+
+                    <div class="alert alert-danger" id="ansWrong3" style="display:none;">Raspunsul este gresit. b este 3</div>
                     <div class="alert alert-success" id="ansGood3" style="display:none;">Raspunsul este corect.</div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label class="my-2">Pentru codul urmator<br>
-                        <pre class="prettyprint">int x = 0;</pre>
-                        ce valoare are x?</label><br>
-                    <div class="checkbox">
-                        <input class="my-2" type="checkbox" id="ans41" value="0">
-                        <label for="ans41">0</label><br>
-                        <input class="my-2" type="checkbox" id="ans42" value="1">
-                        <label for="ans42">1</label><br>
-                        <input class="my-2" type="checkbox" id="ans43" value="2">
-                        <label for="ans43">2</label><br>
-                        <input class="my-2" type="checkbox" id="ans44" value="3">
-                        <label for="ans44">3</label><br>
-                    </div>
-                    <div class="alert alert-danger" id="ansWrong4" style="display: none">Raspunsul este gresit. X are
-                        valoarea 0
-                    </div>
+                    <label class="my-2"><br> <pre class="prettyprint">int x = 1250; <br>x = x / 3;</pre> ce valoare are x?</label><br>
+                    <input class="my-2" type="checkbox" id="ans41" value="0">
+                    <label for="ans41">0.3</label><br>
+                    <input class="my-2" type="checkbox" id="ans42" value="1">
+                    <label for="ans42">416.66666</label><br>
+                    <input class="my-2" type="checkbox" id="ans43" value="2">
+                    <label for="ans43">416</label><br>
+                    <input class="my-2" type="checkbox" id="ans44" value="3">
+                    <label for="ans44">416.6</label><br>
+
+                    <div class="alert alert-danger" id="ansWrong4" style="display: none">Raspunsul este gresit. Raspunsul este 416</div>
                     <div class="alert alert-success" id="ansGood4" style="display: none">Raspunsul este corect.</div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label class="my-2">Pentru codul urmator<br>
-                        <pre class="prettyprint">int x = 0;</pre>
-                        ce valoare are x?</label><br>
-                    <div class="checkbox">
-                        <input class="my-2" type="checkbox" id="ans51" value="0">
-                        <label for="ans51">0</label><br>
-                        <input class="my-2" type="checkbox" id="ans52" value="1">
-                        <label for="ans52">2</label><br>
-                        <input class="my-2" type="checkbox" id="ans53" value="2">
-                        <label for="ans53">3</label><br>
-                        <input class="my-2" type="checkbox" id="ans54" value="3">
-                        <label for="ans54">4</label><br>
-                    </div>
-                    <div class="alert alert-danger" id="ansWrong5" style="display: none">Raspunsul este gresit. X are
-                        valoarea 0
-                    </div>
+                    <label class="my-2" ><br> <pre class="prettyprint">int x = 10 % 0; </pre> Ce se va intampla?</label><br>
+                    <input class="my-2" type="checkbox" id="ans51" value="0">
+                    <label for="ans51">Va rula</label><br>
+                    <input class="my-2" type="checkbox" id="ans52" value="1">
+                    <label for="ans52">Nimic</label><br>
+                    <input class="my-2" type="checkbox" id="ans53" value="2">
+                    <label for="ans53">Warning</label><br>
+                    <input class="my-2" type="checkbox" id="ans54" value="3">
+                    <label for="ans54">Eroare</label><br>
+
+                    <div class="alert alert-danger" id="ansWrong5" style="display: none">Raspunsul este gresit. Codul va da eroare.</div>
                     <div class="alert alert-success" id="ansGood5" style="display: none">Raspunsul este corect.</div>
                 </div>
 
-                <input type="submit" value="Rezolva" class="btn btn-success" id="submit-btn">
+                <div class="form-group">
+                    <label class="my-2" ><br> <pre class="prettyprint">int x = 10 % 1; </pre> Ce se va intampla?</label><br>
+                    <input class="my-2" type="checkbox" id="ans61" value="0">
+                    <label for="ans51">Va rula</label><br>
+                    <input class="my-2" type="checkbox" id="ans62" value="1">
+                    <label for="ans52">Nimic</label><br>
+                    <input class="my-2" type="checkbox" id="ans63" value="2">
+                    <label for="ans53">Warning</label><br>
+                    <input class="my-2" type="checkbox" id="ans64" value="3">
+                    <label for="ans54">Eroare</label><br>
+
+                    <div class="alert alert-danger" id="ansWrong6" style="display: none">Raspunsul este gresit. Codul va rula.</div>
+                    <div class="alert alert-success" id="ansGood6" style="display: none">Raspunsul este corect.</div>
+                </div>
+
+                <div class="form-group w-100">
+                    <label class="my-2" > Care este rezultatul?</label><br>
+                    <pre class="prettyprint">int x = 10 / 3 + 1;</pre>
+                    <input class="my-2" type="checkbox" id="ans71" value="0">
+                    <label for="ans51">1</label><br>
+                    <input class="my-2" type="checkbox" id="ans72" value="1">
+                    <label for="ans52">4</label><br>
+                    <input class="my-2" type="checkbox" id="ans73" value="2">
+                    <label for="ans53">4.33</label><br>
+                    <input class="my-2" type="checkbox" id="ans74" value="3">
+                    <label for="ans54">5.33</label><br>
+
+                    <div class="alert alert-danger" id="ansWrong7" style="display: none">Raspunsul este gresit. Raspunsul este 4.</div>
+                    <div class="alert alert-success" id="ansGood7" style="display: none">Raspunsul este corect.</div>
+                </div>
+
+                <input type="submit" value="Rezolva" class="btn btn-success mb-4" id="submit-btn">
 
             </form>
         </div>
@@ -235,6 +239,37 @@
 <script src="js/aos.js"></script>
 
 <script src="js/main.js"></script>
+
+<script>
+    var ans = [1, 2, 1, 3, 4, 1, 2];
+
+
+    $(document).ready(function () {
+        $("#myForm").on("submit", function (e) {
+            e.preventDefault();
+            $("#submit-btn").remove();
+
+            for (var i = 0; i < 8; ++i) {
+                let check = true;
+
+                for (var j = 1; j < 5; ++j) {
+                    if ($("#ans" + (i + 1) + j)[0].checked && j !== ans[i]) {
+                        check = false;
+                    } else if (! ($("#ans" + (i + 1) + j)[0].checked) && j === ans[i]) {
+                        check = false;
+                    }
+                }
+
+                if (check) {
+                    $("#ansGood" + (i + 1)).css("display", "block");
+                } else {
+                    $("#ansWrong" + (i + 1)).css("display", "block");
+                }
+            }
+        });
+    });
+
+</script>
 
 </body>
 
